@@ -1,0 +1,78 @@
+:root {
+  --bg: #ffffff;
+  --fg: #222;
+  --accent: #4CAF50;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--accent);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔️ ";
+  margin-right: 5px;
+}
+
+.screenshot {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  background: #f0f0f0;
+  margin-top: 40px;
+}
+
+/* Dark Mode */
+body.dark {
+  --bg: #121212;
+  --fg: #f0f0f0;
+  --accent: #4CAF50;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body.dark footer {
+  background: #1a1a1a;
+}
